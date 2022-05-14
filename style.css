@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body {
+    background-color:#FEFAE0;
+  }
+
+#navbar {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    text-align: right;
+}
+
+.index_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.btn_index {
+    border: solid 2px;
+    border-radius: 15px;
+    box-shadow:5px 5px rgb(69, 69, 69);
+    margin-top: 20px;;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.btn_index:active {
+    box-shadow: none;
+    transform: 0.2s all;
+}
+
+#meal {
+    background-color: #FFD000;
+}
+
+#meal:hover{
+    background-color:whitesmoke;
+}
+
+#workout{
+    background-color: #EE8CD8;
+}
+
+#workout:hover{
+    background-color:whitesmoke;
+}
+
+#activity{
+    background-color: #00F99F;
+}
+
+#activity:hover{
+    background-color:whitesmoke;
+}
+
+#cookie {
+    background-color: #00BBF9;
+}
+
+#cookie:hover{
+    background-color:whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+}
+
+ul, li {
+    list-style-type:none;
+    display: inline;
+    margin-right: 10px;
+}
+  
+h1 {
+    color: rgb(69, 69, 69);
+    text-align: center;
+  }
+  
+p {
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin-top: 40px;
+  }
