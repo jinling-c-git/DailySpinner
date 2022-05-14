@@ -39,8 +39,7 @@
     <div class="note_modal" id="myModal">
       <div class="modal_content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <p>💜 “Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.”
-          ― Lao Tzu 💜</p>
+        <p id="arrMsg"></p>
       </div>
     </div>
  
@@ -70,6 +69,18 @@
       // When the user gets the note, the button will be disabled
       document.getElementById('btn_cookieColor').disabled = 'true';
     }
+
+    // Display random quote in note modal
+    let i = Math.floor(Math.random() * 5)
+    let arr = [
+      "💜\"Be yourself; everyone else is already taken.\"― Oscar Wilde💜",
+      "✨\"You only live once, but if you do it right, once is enough.\"― Mae West✨",
+      "💚\"It is better to be hated for what you are than to be loved for what you are not.\”― Andre Gide, Autumn Leaves💚",
+      "💙\“Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.\”― Lao Tzu💙",
+      "\🖤“And now these three remain: faith, hope and love. But the greatest of these is love.\”― Anonymous, The Holy Bible: King James Version🤍"
+    ];
+
+    document.getElementById('arrMsg').innerHTML = arr[i];
     
   </script>
 
