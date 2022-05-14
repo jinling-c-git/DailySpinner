@@ -1,4 +1,4 @@
-
+# Daily Spinner
 Hi 👋 This is Xiaoya & Jinling. Welcome to **Daily Spinner**. If you have trouble making choices every day, please try **Daily Spinner** and have some fun!
 
 ## Inspiration 💡
