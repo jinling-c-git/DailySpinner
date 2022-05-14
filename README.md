@@ -1,4 +1,3 @@
-# DailySpinner
 
 Hi 👋 This is Xiaoya & Jinling. Welcome to **Daily Spinner**. If you have trouble making choices every day, please try **Daily Spinner** and have some fun!
 
@@ -36,4 +35,3 @@ Hi 👋 This is Xiaoya & Jinling. Welcome to **Daily Spinner**. If you have trou
 - Integrate with Twilio 
 - Allow user to enter their own choices and generate a customized wheel
 - Create JSON files for a better information storage
-
