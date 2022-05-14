@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fortune Cookie</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div class="menu">
+        <li class="menu_option"><a href="index.html">Home</a></li>
+        <li class="menu_option"><a href="about.html">About</a></li>
+        <li class="menu_option"><a href="contact.html">Contact</a></li>
+      </div>
+    </nav>
+
+    <!-- Page Information -->
+    <div class="container">
+      <div class="cookie_prompt" id="msg_before">Hello! I'm your fortune cookie 🌟</div>
+      <div class="cookie_prompt" id="msg_after">Do you like the note? 😊 See you tomorrow!</div>
+
+      <!-- Fortune cookie image -->
+      <div class="cookie_logo">
+        <img src="image/fortunecookie.gif" alt="fortune cookie" class="cookie_logo">
+      </div>
+
+      <!-- Trigger the lucky note modal -->
+      <div><button class="btn_cookie" id="btn_cookieColor" onclick="openModal()">I Want a Lucky Note!</button></div>
+
+      <!-- Back to homepage -->
+      <div><button class="btn_cookie" id="btn_homeColor"><a href="index.html">Back to Home</a></button></div>
+    </div>
+
+    <!-- Lucky Note Modal -->
+    <div class="note_modal" id="myModal">
+      <div class="modal_content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="arrMsg"></p>
+      </div>
+    </div>
+ 
+    <footer>
+        <div class="footer_container">
+        <p class="footer_info">
+          &copy; Daily Spinner for HawkHacks 2022 - All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+
+    // Open the lucky note modal
+    function openModal(){
+      document.getElementById('myModal').style.display = 'block';
+    }
+    // Close the modal
+    function closeModal(){
+      document.getElementById('myModal').style.display = 'none';
+
+      // Show different message to user after clicking the button
+      document.getElementById('msg_before').style.display = 'none';
+      document.getElementById('msg_after').style.display = 'block';
+
+      // When the user gets the note, the button will be disabled
+      document.getElementById('btn_cookieColor').disabled = 'true';
+    }
+
+    // Display random quote in note modal
+    let i = Math.floor(Math.random() * 5)
+    let arr = [
+      "💜\"Be yourself; everyone else is already taken.\"― Oscar Wilde💜",
+      "✨\"You only live once, but if you do it right, once is enough.\"― Mae West✨",
+      "💚\"It is better to be hated for what you are than to be loved for what you are not.\”― Andre Gide, Autumn Leaves💚",
+      "💙\“Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.\”― Lao Tzu💙",
+      "\🖤“And now these three remain: faith, hope and love. But the greatest of these is love.\”― Anonymous, The Holy Bible: King James Version🤍"
+    ];
+
+    document.getElementById('arrMsg').innerHTML = arr[i];
+    
+  </script>
+
+</html>
