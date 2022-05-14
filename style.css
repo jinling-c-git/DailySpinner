@@ -12,10 +12,10 @@ body {
 }
 
 .index_logo{
-    text-align: center;
-    margin-left: 26%;
-    width: 500px;;
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
     margin-bottom: 20px;
 }
 
