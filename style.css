@@ -2,7 +2,7 @@
 
 body {
     background-color:#FEFAE0;
-  }
+}
 
 #navbar {
     font-size: 20px;
@@ -86,11 +86,6 @@ ul, li {
     margin-right: 10px;
 }
   
-h1 {
-    color: rgb(69, 69, 69);
-    text-align: center;
-  }
-  
 p {
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
@@ -98,4 +93,86 @@ p {
     margin-top: 40px;
   }
 
+.cookie_logo {
+    display: block;
+    margin-left: auto;
+	margin-right: auto;
+    width: 350px;
+}
 
+.cookie_prompt {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 2px 2px #ffcc6e;
+}
+
+.btn_cookie{
+    border: solid 2px;
+    border-radius: 15px;
+    box-shadow:5px 5px rgb(69, 69, 69);
+    margin-top: 20px;;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 500px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#btn_cookieColor {
+	background-color: rgb(155, 220, 115);
+}
+
+.btn_cookie:active {
+    box-shadow: none;
+    transform: 0.2s all;
+}
+
+#btn_cookieColor:hover {
+    background-color:rgb(224, 243, 58);
+}
+
+#btn_homeColor:hover {
+	background-color:rgb(169, 228, 222)
+}
+
+#myModal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 120px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_content {
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 15px;;
+    width: 60%;
+}
+
+#msg_after {
+	display: none;
+}
+
+.close {
+    float: right;
+    color: rgb(69, 69, 69);
+	font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	cursor: pointer;
+}
