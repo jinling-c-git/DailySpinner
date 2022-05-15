@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 body {
-    background-color:#FEFAE0;
+    background-color: #FEFAE0;
 }
 
 #navbar {
@@ -11,11 +11,19 @@ body {
     text-align: right;
 }
 
-.index_logo{
+.footer_container {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.index_logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:70%;
+    width: 70%;
     margin-bottom: 20px;
 }
 
@@ -27,8 +35,8 @@ body {
 .btn_index {
     border: solid 2px;
     border-radius: 15px;
-    box-shadow:5px 5px rgb(69, 69, 69);
-    margin-top: 20px;;
+    box-shadow: 5px 5px rgb(69, 69, 69);
+    margin-top: 20px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -47,32 +55,32 @@ body {
     background-color: #FFD000;
 }
 
-#meal:hover{
-    background-color:whitesmoke;
+#meal:hover {
+    background-color: whitesmoke;
 }
 
-#workout{
+#workout {
     background-color: #EE8CD8;
 }
 
-#workout:hover{
-    background-color:whitesmoke;
+#workout:hover {
+    background-color: whitesmoke;
 }
 
-#activity{
+#activity {
     background-color: #00F99F;
 }
 
-#activity:hover{
-    background-color:whitesmoke;
+#activity:hover {
+    background-color: whitesmoke;
 }
 
 #cookie {
     background-color: #00BBF9;
 }
 
-#cookie:hover{
-    background-color:whitesmoke;
+#cookie:hover {
+    background-color: whitesmoke;
 }
 
 a {
@@ -80,23 +88,24 @@ a {
     color: rgb(69, 69, 69);
 }
 
-ul, li {
-    list-style-type:none;
+ul,
+li {
+    list-style-type: none;
     display: inline;
     margin-right: 10px;
 }
-  
+
 p {
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     margin-top: 40px;
-  }
+}
 
 .cookie_logo {
     display: block;
     margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
     width: 350px;
 }
 
@@ -107,11 +116,12 @@ p {
     text-shadow: 2px 2px #ffcc6e;
 }
 
-.btn_cookie{
+.btn_cookie {
     border: solid 2px;
     border-radius: 15px;
-    box-shadow:5px 5px rgb(69, 69, 69);
-    margin-top: 20px;;
+    box-shadow: 5px 5px rgb(69, 69, 69);
+    margin-top: 20px;
+    ;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -122,7 +132,7 @@ p {
 }
 
 #btn_cookieColor {
-	background-color: rgb(155, 220, 115);
+    background-color: rgb(155, 220, 115);
 }
 
 .btn_cookie:active {
@@ -131,24 +141,24 @@ p {
 }
 
 #btn_cookieColor:hover {
-    background-color:rgb(224, 243, 58);
+    background-color: rgb(224, 243, 58);
 }
 
 #btn_homeColor:hover {
-	background-color:rgb(169, 228, 222)
+    background-color: rgb(169, 228, 222)
 }
 
 #myModal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 120px; 
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 120px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal_content {
@@ -156,23 +166,25 @@ p {
     margin: auto;
     padding: 20px;
     border: 2px solid rgb(69, 69, 69);
-    border-radius: 15px;;
+    border-radius: 15px;
+    ;
     width: 60%;
 }
 
 #msg_after {
-	display: none;
+    display: none;
 }
 
 .close {
     float: right;
     color: rgb(69, 69, 69);
-	font-size: 20px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-	color: #000;
-	cursor: pointer;
+    color: #000;
+    cursor: pointer;
 }
+
