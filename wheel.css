@@ -8,8 +8,7 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Roboto Mono', monospace;
-    text-align: right;
-    
+    text-align: right;    
 }
 
 a {
@@ -252,11 +251,11 @@ body {
 }
 
 .btns {
-    position: absolute;
+    position:fixed;
     display: block;
-    top: 30%; left: 100px;
+    top: 30%; 
+    left: -30px;
     /* display: inline-block; */
-    margin-top: 100px;
 }
 
 .btn_index {
@@ -271,6 +270,7 @@ body {
     width: 300px;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
 }
 
 .btn_index:active {
@@ -320,11 +320,8 @@ body {
 }
 
 .subtitle {
+    margin-top: 50px;
     position: absolute;
-    right: 35%;
-    text-align: center;
-    margin-top: 150px;
-    
 }
 
 h1 {
