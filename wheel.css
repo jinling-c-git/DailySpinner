@@ -87,6 +87,49 @@ body {
   text-shadow: rgba(255, 255, 255, 0.1) 0px -1px 0px, rgba(0, 0, 0, 0.2) 0px 1px 0px;
 	left:135px;
 }
+
+/* meal wheel */
+.wheelContainer .Sushi {
+    background-color: #ffba08;
+    left: 50%;
+}
+
+.wheelContainer .Shawarma {
+    background-color: #faa307;
+    transform: rotate(45deg);
+}
+
+.wheelContainer .Ramen {
+    background-color: #f48c06;
+    transform: rotate(90deg);
+}
+
+.wheelContainer .Burger {
+    background-color: #e85d04;
+    transform: rotate(135deg);
+}
+
+.wheelContainer .Burrito {
+    background-color: #dc2f02;
+    transform: rotate(180deg);
+}
+
+.wheelContainer .curry {
+    background-color: #d00000;
+    transform: rotate(225deg);
+}
+
+.wheelContainer .Pasta {
+  background-color: #9d0208;
+  transform: rotate(270deg);
+}
+
+.wheelContainer .Pizza {
+  background-color: #6a040f;
+  transform: rotate(315deg);
+}
+
+/* workout wheel */
 .wheelContainer .one {
     background-color: #448aff;
     left: 50%;
@@ -127,6 +170,47 @@ body {
   transform: rotate(315deg);
 }
 
+/* activity wheel */
+.wheelContainer .Movie {
+    background-color: #2266bf;
+    left: 50%;
+}
+
+.wheelContainer .Tubing {
+    background-color: #357ddb;
+    transform: rotate(45deg);
+}
+
+.wheelContainer .Hiking {
+    background-color: #357ddb;
+    transform: rotate(90deg);
+}
+
+.wheelContainer .Shopping {
+    background-color: #a3cdf1;
+    transform: rotate(135deg);
+}
+
+.wheelContainer .Bowling {
+    background-color: #9ea1eb;
+    transform: rotate(180deg);
+}
+
+.wheelContainer .Skating {
+    background-color: #9876e4;
+    transform: rotate(225deg);
+}
+
+.wheelContainer .Karting {
+  background-color: #934add;
+  transform: rotate(270deg);
+}
+
+.wheelContainer .Golf {
+  background-color: #7400b8;
+  transform: rotate(315deg);
+}
+
 #spin {
     position: absolute;
     top: 50%;
@@ -150,6 +234,11 @@ body {
     letter-spacing: 1px;
 } 
 
+#spin:hover{
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    /* background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376); */
+}
+
 #spin:before {
   content: '';
   position: absolute;
@@ -165,7 +254,7 @@ body {
 .btns {
     position: absolute;
     display: block;
-    top: 50%; right: 100px;
+    top: 30%; left: 100px;
     /* display: inline-block; */
     margin-top: 100px;
 }
@@ -196,6 +285,16 @@ body {
     background-color:whitesmoke;
 }
 
+#home {
+    background-color: #edf2f4;
+}
+
+#home:hover {
+    background-color: rgb(169, 228, 222)
+}
+
+
+
 #workout{
     background-color: #EE8CD8;
 }
@@ -218,6 +317,21 @@ body {
 
 #cookie:hover{
     background-color:whitesmoke;
+}
+
+.subtitle {
+    position: absolute;
+    right: 35%;
+    text-align: center;
+    margin-top: 150px;
+    
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 2px 2px #ffcc6e;
 }
 
 

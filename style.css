@@ -188,3 +188,15 @@ p {
     cursor: pointer;
 }
 
+/* index page spinning wheel */
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.spinning {
+    position: relative;
+    left: 20%;
+    width: 10%;
+    animation: spin 1s infinite;
+}
