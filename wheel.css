@@ -30,11 +30,12 @@ p {
   }
 
 .footer_container {
-    position: fixed;
+    position: relative;
     width: 100%;
     left: 0;
     bottom: 0;
     text-align: center;
+    margin-top: 300px;
 }
 
 *{
@@ -255,7 +256,6 @@ body {
     display: block;
     top: 30%; 
     left: -30px;
-    /* display: inline-block; */
 }
 
 .btn_index {
