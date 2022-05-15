@@ -20,11 +20,13 @@ body {
 }
 
 .index_logo {
+    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     margin-bottom: 20px;
+    z-index: 1;
 }
 
 .container {
@@ -195,8 +197,10 @@ p {
 }
 
 .spinning {
-    position: relative;
-    left: 20%;
+    position: absolute;
+    top: 10px;
+    left: 69%;
     width: 10%;
     animation: spin 1s infinite;
+    z-index: 2;
 }
