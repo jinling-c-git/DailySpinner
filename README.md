@@ -6,19 +6,6 @@ Hi 👋 This is Xiaoya & Jinling. Welcome to **Daily Spinner**. If you have trou
 - Researches indicate that people having difficulty making decisions can be a sign of depression
 - It is nice to have some fun when you don't know which one to choose
 
-<<<<<<< HEAD
-- Choices Generator
-<<<<<<< HEAD
-- Meal
-- Workout
-- Activity
-- Fortune Cookie
-- Xiaoya
-- Jinling
-=======
-- Xiaoya Test
->>>>>>> 8cd1e2c9a529f82c8a61bf5b899a84c775a38f4c
-=======
 ## What it does 🧩
 - User can spin the wheel to decide on the next meal, workout, or activity
 - User can get a fortune cookie note (1 note per day)
@@ -48,4 +35,4 @@ Hi 👋 This is Xiaoya & Jinling. Welcome to **Daily Spinner**. If you have trou
 - Integrate with Twilio 
 - Allow user to enter their own choices and generate a customized wheel
 - Create JSON files for a better information storage
->>>>>>> ddddd8253e656d440eb7b388aa5a3b6a153c0568
+
