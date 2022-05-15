@@ -32,7 +32,8 @@ body {
     margin-top: 100px;
 }
 
-.btn_index {
+.btn_index, 
+.btn_cookie {
     border: solid 2px;
     border-radius: 15px;
     box-shadow: 5px 5px rgb(69, 69, 69);
@@ -41,6 +42,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
     width: 300px;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
@@ -116,20 +118,6 @@ p {
     text-shadow: 2px 2px #ffcc6e;
 }
 
-.btn_cookie {
-    border: solid 2px;
-    border-radius: 15px;
-    box-shadow: 5px 5px rgb(69, 69, 69);
-    margin-top: 20px;
-    ;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    width: 500px;
-    font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
-}
 
 #btn_cookieColor {
     background-color: rgb(155, 220, 115);
