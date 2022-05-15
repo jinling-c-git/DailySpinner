@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="wheel.css">
-
     <title>Meal</title>
 </head>
 
 <body>
-    <div>
         <div id="navbar">
             <div class="menu">
                 <li class="menu_option"><a href="index.html">🏠 Home</a></li>
@@ -17,29 +15,24 @@
                 <li class="menu_option"><a href="contact.html">📮 Contact</a></li>
             </div>
         </div>
-    </div>
+    
+        <div class="wheel">
+            <button id="spin">Spin</button>
+    
+            <div class="wheelContainer">
+                <div class="Sushi">Sushi</div>
+                <div class="Shawarma">Shawarma</div>
+                <div class="Ramen">Ramen</div>
+                <div class="Burger">Burger</div>
+                <div class="Burrito">Burrito</div>
+                <div class="Curry">Curry</div>
+                <div class="Pasta">Pasta</div>
+                <div class="Pizza">Pizza</div>
+            </div>
+        </div>    
 
-    <div class="subtitle">
-        <span style='font-size:100px;'>&#127828;</span>
-        <h1>Don't know what's to eat? Spin the wheel &#128192;</h1>
-    </div>
-
-    <div class="wheel">
-        <button id="spin">Spin</button>
-
-        <div class="wheelContainer">
-            <div class="Sushi">Sushi</div>
-            <div class="Shawarma">Shawarma</div>
-            <div class="Ramen">Ramen</div>
-            <div class="Burger">Burger</div>
-            <div class="Burrito">Burrito</div>
-            <div class="Curry">Curry</div>
-            <div class="Pasta">Pasta</div>
-            <div class="Pizza">Pizza</div>
-        </div>
-    </div>
-
-    <div class="btns">
+  
+    <div class="btns" id="mySidenav">
         <a href="workout.html"><input type="button" class="btn_index" id="workout" value="Pick a Workout"></a><br />
         <a href="activity.html"><input type="button" class="btn_index" id="activity" value="Pick an Activity"></a><br />
         <a href="fortunecookie.html"><input type="button" class="btn_index" id="cookie"
