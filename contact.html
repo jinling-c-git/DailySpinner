@@ -14,6 +14,14 @@
         text-align: center;
       }
 
+      .contact_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;;
+        width: 550px;
+      }
+
       .contact {
         font-size: 20px;
         font-family: 'Roboto Mono', monospace;
@@ -31,60 +39,44 @@
         width: 110px;
       }
 
-    input[type=text], select {
-      width: 500px;
-      padding: 20px 20px;
-      margin: 10px 0;
-      color: rgb(166, 166, 166);
-      display: inline-block;
-      border: 2px solid rgb(69, 69, 69);
-      border-radius: 15px;
-      box-sizing: border-box;
-    }
+      input[type=text], select {
+        width: 500px;
+        padding: 20px 20px;
+        margin: 10px 0;
+        color: rgb(166, 166, 166);
+        display: inline-block;
+        border: 2px solid rgb(69, 69, 69);
+        border-radius: 15px;
+        box-sizing: border-box;
+      }
 
-    input[type=textarea], select {
-      width: 500px;
-      height: 300px;
-      padding: 20px 20px;
-      margin: 10px 0;
-      color: rgb(166, 166, 166);
-      display: inline-block;
-      border: 2px solid rgb(69, 69, 69);
-      border-radius: 15px;
-      box-sizing: border-box;
-    }
+      input[type=textarea], select {
+        width: 500px;
+        height: 300px;
+        padding: 20px 20px;
+        margin: 10px 0;
+        color: rgb(166, 166, 166);
+        display: inline-block;
+        border: 2px solid rgb(69, 69, 69);
+        border-radius: 15px;
+        box-sizing: border-box;
+      }
 
-    input[type=submit] {
-      border: solid 2px;
-      border-radius: 15px;
-      box-shadow:5px 5px rgb(69, 69, 69);
-      margin-top: 20px;;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      width: 150px;
-      font-size: 20px;
-      font-family: 'Roboto Mono', monospace;
-      cursor: pointer;
-      margin-left: 100px;
-}
-
-#btn_cancel {
-      border: solid 2px;
-      border-radius: 15px;
-      box-shadow:5px 5px rgb(69, 69, 69);
-      margin-top: 20px;;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      width: 150px;
-      font-size: 20px;
-      font-family: 'Roboto Mono', monospace;
-      cursor: pointer;
-      margin-left: 100px;
-}
+      input[type=button] {
+        border: solid 2px;
+        border-radius: 15px;
+        box-shadow:5px 5px rgb(69, 69, 69);
+        margin-top: 20px;;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 150px;
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+        cursor: pointer;
+        margin-left: 100px;
+      }
 
 #btn_cancel:hover{
   background-color: rgb(234, 188, 188);
@@ -103,14 +95,15 @@
   <body>
     <nav id="navbar">
       <div class="menu">
-        <li class="menu_option"><a href="index.html">Home</a></li>
-        <li class="menu_option"><a href="about.html">About</a></li>
-        <li class="menu_option"><a href="contact.html">Contact</a></li>
+        <li class="menu_option"><a href="index.html">🏠 Home</a></li>
+        <li class="menu_option"><a href="about.html">ℹ️ About</a></li>
+        <li class="menu_option"><a href="contact.html">📮 Contact</a></li>
       </div>
     </nav>
 
     <div class="contact_container">
-      <div class="contact_title">📮 Contact Us</div>
+      <div><img src="image/letter.gif" alt="letter gif" class="contact_img"></div>
+      <div class="contact_title"> <img src="image/icons-communication.png" style="width: 30px;"> Contact Us</div>
       <form action="" class="contact">
         <div>
           <label class="label" for="name">Name:</label>
@@ -128,8 +121,18 @@
           <label class="label" for="message">Message:</label>
         <input type="textarea" id="message" name="message"><br/><br/>
         </div>
-        <input type="submit" value="Submit" id="btn_submit"> <a href="index.html"><input type="button" value="Cancel" id="btn_cancel"></a>
+        <input type="button" value="Submit" id="btn_submit" onclick="openModal()"> <a href="index.html"><input type="button" value="Cancel" id="btn_cancel"></a>
       </form>
+    </div>
+
+    <!-- Suggestion Submitted Modal -->
+    <div class="contact_modal" id="myModal">
+      <div class="modal_content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Thank you for your message 💌 </p>
+        <p> We really appreciate your suggestions 🙌
+        </p>
+      </div>
     </div>
 
  
@@ -141,5 +144,16 @@
       </div>
     </footer>
   </body>
+
+  <script>
+     // Open the modal
+     function openModal(){
+      document.getElementById('myModal').style.display = 'block';
+    }
+    // Close the modal
+    function closeModal(){
+      document.getElementById('myModal').style.display = 'none';
+    }
+  </script>
 
 </html>
